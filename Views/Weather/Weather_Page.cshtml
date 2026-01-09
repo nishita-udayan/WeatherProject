@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Weather";
+}
+<div class="container mt-4">
+    <h3>Weather Information</h3>
+    <select id="drpcity" class="form-select  form-select-sm mt-3">
+    <option value="">-- Select City --</option>
+    <option value="Doha">Doha</option>
+     <option value="Chennai">Chennai</option>
+    <option value="Delhi">Delhi</option>
+    <option value="kerala">Kerala</option>
+</select>
+
+<div class="container " >
+        <table class="table table-hover" id="Weather_tbl">
+        <thead>
+            <tr>
+                <th>Mininum Temperature</th>
+                <th>Maximum Temperature</th>
+                <th>Humidity(%)</th>
+            </tr></thead>  
+        <tbody></tbody>
+        </table>
+</div>
+    <div class="col-12 d-flex justify-content-end align-items-end">
+    <button type="submit" class="btn btn-primary" id="btnSaveWeather">Save</button>
+    </div>
+</div>
+
+<div class="container ">
+    To show saved weather details <button class="btn btn-primary" id="btnweatherDetails">click here </button>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="~/js/WeatherPage.js"></script>
+}
+

@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Weather Details";
+}
+<div class="container">
+    <input class="form-control me-2" type="search" id="weatherSearch" placeholder="Search" aria-label="Search">
+</div>
+<div class="container ">
+    <table class="table table-hover" id="WeatherDetails_tbl">
+        <thead>
+            <tr>
+                <th>Mininum Temperature</th>
+                <th>Maximum Temperature</th>
+                <th>Humidity(%)</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<div class="col-12 d-flex justify-content-end align-items-end">
+    <button class="btn btn-primary" id="btnupdate">Update </button>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="~/js/WeatherDetails.js"></script>
+}
+
